@@ -1,0 +1,34 @@
+{
+	"files": {
+		"index.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "../css/index.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": [
+				"base/_base.less",
+				"base/_index.less",
+				"base/_reset.less",
+				"base/_resetjqery.less",
+				"index.less",
+				"layout/_index.less",
+				"modules/_footer.less",
+				"modules/_header.less",
+				"modules/_index.less",
+				"modules/_nav.less",
+				"states/_index.less",
+				"utilites/_index.less"
+			]
+		}
+	}
+}
