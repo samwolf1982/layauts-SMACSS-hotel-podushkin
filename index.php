@@ -30,6 +30,12 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+      <style>
+   @font-face {
+   font-family: Franklin Gothic Book; /* Гарнитура шрифта */
+    src: url(bootstrap/fonts/FRABK.ttf); /* Путь к файлу со шрифтом */
+  
+  </style>
 
   </head>
 
@@ -46,7 +52,7 @@
                 
               <li class="active"><a href="#htab_first" data-toggle="tab">Home</a></li>
                    <?php foreach ($arrayName = array('о гостиннице','бронирование','правила','гаринтии','наши игрушки','гостевая книга','скидки','новости','контакты','подбор номера'  ) as $key => $value): ?>
-                       <li><a href="#htab<?=$key?>" data-toggle="tab"><?=$value?></a></li>
+                       <li><a  href="#htab<?=$key?>" data-toggle="tab"><?=$value?></a></li>
                     <?php endforeach ?>  
         
           
