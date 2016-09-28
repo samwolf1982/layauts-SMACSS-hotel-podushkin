@@ -11,6 +11,7 @@
 
     <!-- Bootstrap core CSS -->
        <link href="bootstrap\dist\css\bootstrap.css" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
 
@@ -20,6 +21,10 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/dashboard.css" rel="stylesheet">
         <link href="assets/css/nav.css" rel="stylesheet">
+         <!-- ... -->
+
+
+  <link rel="stylesheet" href="bootstrap/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -50,7 +55,7 @@
             <ul id="nav-tabs-wrapper" class="nav nav-tabs nav-tabs-horizontal nav-justified">
            
                 
-              <li class="active"><a href="#htab_first" data-toggle="tab">Home</a></li>
+              <li class="active"><a href="#htab_first" data-toggle="tab"><img src="images/home.png" alt="image" title="some" class="nav_img img-responsive"  >   </a></li>
                    <?php foreach ($arrayName = array('о гостиннице','бронирование','правила','гаринтии','наши игрушки','гостевая книга','скидки','новости','контакты','подбор номера'  ) as $key => $value): ?>
                        <li><a  href="#htab<?=$key?>" data-toggle="tab"><?=$value?></a></li>
                     <?php endforeach ?>  
@@ -58,7 +63,7 @@
           
               <li><a href="#htab_last" data-toggle="tab">LAst</a></li>
             </ul>
-            <div class="tab-content">
+            <div class="tab-content" id="tab-content">
 
 
 
@@ -70,15 +75,15 @@
                <div role="tabpanel" class="tab-pane fade in active" id="htab_first">
                   
            <ul id="nav-tabs-wrapper_inner" class="nav nav-tabs nav-tabs-horizontal nav-center" style="text-align: center;">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
+            <div class="col-sm-1  col-md-2 col-lg-3"></div>
+            <div class="col-sm-10  col-md-8 col-lg-6 text-center">
          
               <li class='nav_inner' ><a href="#hta" data-toggle="tab">Конфидициальность</a></li>
               <li class='nav_inner'><a href="#ht" data-toggle="tab">Безопасность</a></li>
               <li class='nav_inner'><a href="#ht3" data-toggle="tab">Сертификация</a></li>
               <li class='nav_inner'><a href="#ht3" data-toggle="tab">Санитарный контроль</a></li>
               </div>
-             <div class="col-sm-2"></div>
+             <div class="col-sm-1  col-md-2 col-lg-3"></div>
             </ul>
                 </div>
 
@@ -88,14 +93,14 @@
                     <div role="tabpanel" class="tab-pane fade" id="htab<?=$key?>">
                   
            <ul id="nav-tabs-wrapper_inner" class="nav nav-tabs nav-tabs-horizontal nav-center" style="text-align: center;">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
+            <div class="col-sm-1 col-md-2 col-lg-3"></div>
+            <div class="col-sm-10 col-md-8 col-lg-6">
               <li class='nav_inner' ><a href="#hta" data-toggle="tab">Конфидициальность</a></li>
               <li class='nav_inner'><a href="#ht" data-toggle="tab">Безопасность</a></li>
               <li class='nav_inner'><a href="#ht3" data-toggle="tab">Сертификация</a></li>
               <li class='nav_inner'><a href="#ht3" data-toggle="tab">Санитарный контроль</a></li>
               </div>
-             <div class="col-sm-2"></div>
+             <div class="col-sm-1 col-md-2 col-lg-3"></div>
             </ul>
                 </div>
                   
@@ -104,14 +109,14 @@
            <div role="tabpanel" class="tab-pane fade" id="htab_last">
                   
            <ul id="nav-tabs-wrapper_inner" class="nav nav-tabs nav-tabs-horizontal nav-center" style="text-align: center;">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
+            <div class="col-sm-1  col-md-2 col-lg-3"></div>
+            <div class="col-sm-10 col-md-8 col-lg-6">
               <li class='nav_inner' ><a href="#hta" data-toggle="tab">Конфидициальность</a></li>
               <li class='nav_inner'><a href="#ht" data-toggle="tab">Безопасность</a></li>
               <li class='nav_inner'><a href="#ht3" data-toggle="tab">Сертификация</a></li>
                <li class='nav_inner'><a href="#ht3" data-toggle="tab">Санитарный контроль</a></li>
               </div>
-             <div class="col-sm-2"></div>
+             <div class="col-sm-1 col-md-2 col-lg-3"></div>
             </ul>
                 </div>
 
@@ -124,31 +129,170 @@
 
 <!-- heder menu end -->
 
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-3">
+    <span class="add-on"><i class="material-icons" style="font-size:36px">place</i></span><input class="span2" id="prependedInput" size="16" type="text" placeholder="Username">
+  <button class="btn btn-default" type="submit">Кнопка</button><button class="btn btn-default" type="submit">Кнопка</button></div>
+  <div class="col-sm-7"></div>
 
+</div></div>
+
+<!-- slider -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-          </ul>
+        <div class="col-sm-3 col-md-2 sidebar text-center">
+
+            <a href="/" >  <img src="images/logo_big.png" img-responsive class="imagelogo" alt="" title="" /></a>
+            <div class="single_contact">
+              Единый контaкт<br>
+              <div class="telefone">
+              <a href="tel:+74952212238"> + 7 (495) 221-223-8</a>
+              </div>
+            </div>
+             <div class="form-group">     
+            <select class="form-control">
+             <option value="" disabled selected hidden>Выберете отель</option>
+  <option>1</option>
+  <option>22</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+
+
+       <span>Ближайший отель:  <a href="#" >Проспект Мира</a></span>
+          <!-- data -->
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" placeholder="Дата заезда" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+
+
+ 
+        <div class="container-fluid ">
+          <div class="row">
+          <div class="col-sm-6 no-margin">    <div class='input-group date' id='datetimepicker3'>
+                    <input type='text' class="form-control"  placeholder="Время заезда" />
+                    <span class="input-group-addon">
+                         <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div></div>
+          <div class="col-sm-6 no-margin">
+                  <div class='input-group date' id='datetimepicker4'>
+                    <input type='text' class="form-control" placeholder="Длительность" />
+                 
+                </div>
+
+          </div>
+             
+             
+
+          </div>
+
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Dashboard</h1>
+          <div class="container-fluid "> 
+            <div class="row">
+
+          <div  class="col-sm-6 no-margin"><input type="text" class="form-control form-control-inline" placeholder="Цена от">
+</div>
+          <div class="col-sm-6 no-margin"><input type="text" class="form-control form-control-inline" placeholder="Цена до">
+</div>
+
+
+ 
+          </div>
+
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 no-margin">
+        <button id="max-button" type="submit" class=" btn btn-primary ">Забронировать</button> 
+    </div>
+  </div>
+</div>
+        
+       
+
+
+
+           
+
+        </div>  </div>  
+         <!-- end form -->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main ">
+ 
+
+         
+
+<div class="container no-margin max_w">
+  <div class="row">
+    <!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/slider1.png" alt="Chania" class="" >
+      <div class="carousel-caption">
+        <h3>Chania</h3>
+        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/slider1.png" alt="Chania"  class="">
+      <div class="carousel-caption">
+        <h3>Chania</h3>
+        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+      </div>
+    </div>
+
+
+
+  <!-- Left and right controls -->
+  <a  class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a  class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+     <!-- end Carusele -->
+  </div>
+</div>
+<!-- end wrap carusele -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
@@ -311,8 +455,42 @@
        <script src="js\jsfromajax\js.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="bootstrap/bower_components/moment/min/moment.min.js"></script>
+  <script type="text/javascript" src="bootstrap/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+
+            <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+            $(function () {
+                $('#datetimepicker3').datetimepicker({
+                    format: 'LT'
+                });
+                    $('#datetimepicker4').datetimepicker({
+                    format: 'LT'
+                });
+            });
+     
+
+
+        </script>
         <script> 
-   $(document).on('click', '.yamm .dropdown-menu', function(e) { e.stopPropagation()})
+   $(document).on('click', '.yamm .dropdown-menu', function(e) { e.stopPropagation()});
+   
+  $('#tab-content').mouseleave(function () {
+      $('#tab-content').slideToggle();      
+});
+</script>
+
+<script type="text/javascript">
+ $(function () {
+
+
+
+    });
+
 </script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="assets/js/vendor/holder.min.js"></script>

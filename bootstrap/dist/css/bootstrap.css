@@ -6808,4 +6808,16 @@ select:invalid {
   font-size: x-large;
   color: black;
 }
+/*       for slider **/
+/* end slider  */
+.no-marginlr {
+  margin-left: 0;
+  margin-right: 0;
+}
+.max_w {
+  width: 100%;
+}
+.min_w {
+  width: 0;
+}
 /*# sourceMappingURL=bootstrap.css.map */
