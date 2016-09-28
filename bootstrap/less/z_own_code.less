@@ -2,7 +2,7 @@
 	background-color: @tab_upper_color;
  li.active > a,  li.active > a:hover,  li.active > a:focus,  li > a:hover, li > a:focus
  ,  li.active,  li:hover, li:focus {
-    color: #555555;
+    color: @nav_letter_color;
     background-color: @tab_upper_color_active;
     border: none;
     border-bottom-color: transparent;
@@ -23,8 +23,9 @@ li {
 
 .nav_inner{
 	float: left;
-	padding-left: 30px;
 	padding: 10px 0;
+	padding-left: 30px;
+	
 	
 	&>a{
 	text-decoration: none;	
@@ -34,7 +35,15 @@ li {
 .nav-tabs{
 	border: none;
 }
-
+#nav-tabs-wrapper{
+	border: none;
+	li{
+		a{
+padding-left: 5px;
+padding-right: 5px;
+		}
+	}
+}
 
 .nav-tabs.nav-justified > li > a {
     border-bottom: 0;
@@ -48,3 +57,45 @@ li {
 .nav-tabs-wrapper{
 	max-height: @nav_up_h;
 }	
+.navbar * a,.navbar * li.active a,.navbar * a:hover{
+	color: @nav_letter_color;
+}
+.nav_img{
+	float: right;
+	padding-top: 0;
+}
+
+#nav-tabs-wrapper{
+  li {
+  	&:first-child {
+  		a{
+  		padding-top: 0;
+	padding-bottom: 0;
+}
+  	}
+  }
+	
+
+}
+
+ select:invalid { color: gray; }
+ .no-margin{
+ 	 padding-right:0;
+    padding-left:0;
+ }
+ #max-button{
+ 	width: 100%;
+ 	background-color: @tab_upper_color_active;
+ }
+
+ .telefone{
+ 	    font-weight: 600; /* Жирное начертание */
+          a{
+          	text-decoration: none;
+         font-size: x-large;
+          	color: black;
+          }
+   
+
+
+ 	}
