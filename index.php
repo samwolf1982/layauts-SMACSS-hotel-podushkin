@@ -155,7 +155,7 @@
             <select class="form-control">
              <option value="" disabled selected hidden>Выберете отель</option>
   <option>1</option>
-  <option>22</option>
+  <option>2</option>
   <option>3</option>
   <option>4</option>
   <option>5</option>
@@ -290,10 +290,46 @@
   </div>
 <!-- end wrap carusele -->
 
+</div>
 
+<!-- продукт плюс карта  -->
+<div class="container no-margin max_w">
+  <div class="row">
+    <div class=" prod col-sm-5">
+   <p>Lorem ipsum dolor.</p>
+<!-- продукты заполнение старт -->
+<?php foreach (range(0, 3) as $key => $value): ?>
+  <div class="wrap_prod">
 
+       <div class="col-sm-5">
+         
+         <img src="images/prod.png" alt="" class="prod_img">
+       </div>
+       <div class="col-sm-7">
 
+         <ul class="address">
+       
+  <li><a href="#" alt="" title="" >Lorem ipsum.</a></li>
+  <li><a href="#" alt="" title="" >Quam, quas.</a></li>
+  <li><a href="#" alt="" title="" >Facilis, aspernatur.</a></li>
+  <li><a href="#" alt="" title="" >At, consequuntur.</a></li>
+  <li><a href="#" alt="" title="" >Dolor, quas!</a></li>
+</ul>
+       </div>
+</div>
 
+<?php endforeach ?>
+
+    </div>
+    <!-- продукты заполнение конец -->
+    <!-- карта начало -->
+    <div id="map-container"  class="col-sm-7">
+      
+    </div>
+<!--     карта конец -->
+  </div>
+</div>
+<!-- продукт плюс карта  конец -->
 
 
 
@@ -513,6 +549,31 @@
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-  
+     <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+   <script> 
+ 
+      function init_map() {
+    var var_location = new google.maps.LatLng(45.430817,12.331516);
+ 
+        var var_mapoptions = {
+          center: var_location,
+          zoom: 14
+        };
+ 
+    var var_marker = new google.maps.Marker({
+      position: var_location,
+      map: var_map,
+      title:"Venice"});
+ 
+        var var_map = new google.maps.Map(document.getElementById("map-container"),
+            var_mapoptions);
+ 
+    var_marker.setMap(var_map); 
+ 
+      }
+ 
+      google.maps.event.addDomListener(window, 'load', init_map);
+ 
+    </script>
 
 </body></html>

@@ -6868,4 +6868,29 @@ select:invalid {
 .min_w {
   width: 0;
 }
+/*      product after slider */
+.prod > ul > li {
+  border: solid #ecedf0;
+  list-style-type: none;
+}
+.address > li {
+  list-style-type: none;
+}
+/* map   */
+#map-container {
+  height: 100%;
+  max-height: 610px;
+}
+#map-outer {
+  height: 440px;
+  padding: 20px;
+  border: 2px solid #CCC;
+  margin-bottom: 20px;
+  background-color: #FFF;
+}
+@media all and (max-width: 991px) {
+  #map-outer {
+    height: 650px;
+  }
+}
 /*# sourceMappingURL=bootstrap.css.map */
