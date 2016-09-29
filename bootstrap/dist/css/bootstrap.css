@@ -6873,8 +6873,9 @@ select:invalid {
   border: solid #ecedf0;
   list-style-type: none;
 }
-.address > li {
-  list-style-type: none;
+.address > li > a {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 /* map   */
 #map-container {
@@ -6892,5 +6893,9 @@ select:invalid {
   #map-outer {
     height: 650px;
   }
+}
+/* news_action */
+.news_action {
+  background-image: url('../../../images/back1.png');
 }
 /*# sourceMappingURL=bootstrap.css.map */

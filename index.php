@@ -295,7 +295,7 @@
 <!-- продукт плюс карта  -->
 <div class="container no-margin max_w">
   <div class="row">
-    <div class=" prod col-sm-5">
+    <div class=" prod col-sm-5 text-center">
    <p>Lorem ipsum dolor.</p>
 <!-- продукты заполнение старт -->
 <?php foreach (range(0, 3) as $key => $value): ?>
@@ -307,14 +307,14 @@
        </div>
        <div class="col-sm-7">
 
-         <ul class="address">
-       
-  <li><a href="#" alt="" title="" >Lorem ipsum.</a></li>
+        <ul class="nav nav-pills nav-stacked address">
+        <li><a href="#" alt="" title="" >Lorem ipsum.</a></li>
   <li><a href="#" alt="" title="" >Quam, quas.</a></li>
   <li><a href="#" alt="" title="" >Facilis, aspernatur.</a></li>
   <li><a href="#" alt="" title="" >At, consequuntur.</a></li>
   <li><a href="#" alt="" title="" >Dolor, quas!</a></li>
-</ul>
+      </ul>
+
        </div>
 </div>
 
@@ -332,7 +332,21 @@
 <!-- продукт плюс карта  конец -->
 
 
+<!-- новости и акции  -->
+<div class="container news_action max_w text-center">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h2>Lorem ipsum.</h2>
+</div>
+<div class="row ">
+  <div class="col-sm-4"><img src="images/action1.png" alt="" title=""></div>
+  <div class="col-sm-4"><img src="images/action1.png" alt="" title=""></div>
+  <div class="col-sm-4"><img src="images/action1.png" alt="" title=""></div>
+</div>
+  </div>
+</div>
 
+<!-- новости и акции  end -->
 
 
 
