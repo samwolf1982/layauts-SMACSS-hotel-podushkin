@@ -133,8 +133,8 @@
 
     <div class="container-fluid quest_top">
       <div class="row">
-        <div class="col-sm-2 text-right hide_button">
-           <button class="btn btn_yes" type="submit">Да</button>
+        <div class="col-sm-2 ">
+          
         </div>
         <div class="col-sm-4" >
           <span class="add-on input_text_up"><i class="material-icons" style="font-size:36px">place</i></span> 
@@ -151,7 +151,16 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-3 col-lg-2 sidebar text-center">
+ <div class="row no-marginlr">
+            <div class="col-sm-12 text-right hide_button">
+ <button class="btn btn_yes hide_button btn_arrow" type="submit"></button>
+            </div>
+            </div>
 
+
+<div class="row ">
+                <div class="col-sm-1 "></div> 
+                <div class="col-sm-10 ">   
               <a href="/" >  <img src="images/logo_big.png" img-responsive class="imagelogo" alt="" title="" /></a>
               <div class="single_contact">
                 Единый контaкт<br>
@@ -224,7 +233,9 @@
               </div>
             </div>
           </div>  
-
+    </div>
+                    <div class="col-sm-1 "></div>
+          </div>  
           </div>  
           <!-- end form -->
              
@@ -297,7 +308,8 @@
             <div class="container no-margin max_w">
               <div class="row">
                 <div class=" prod col-sm-5 text-center">
-                 <p>Lorem ipsum dolor.</p>
+                 <br>
+                 <p  class="header_prod">Показаны ближайшие к вам гостиницы </p>
                  <!-- продукты заполнение старт -->
                  <?php foreach ($arrayName = array('cold_li','text-danger','text-success','brown_li' ) as $key => $v): ?>
 
@@ -312,7 +324,7 @@
                      <div class="media-body">
 
                       <ul class="nav nav-pills nav-stacked address">
-                        <li><a href="#" alt="" title="" >Проспект Мира  </a></li>
+                        <li><a href="#" alt="" title="" class="header_prod" >Проспект Мира  </a></li>
                         <li ><a class="<?=$v;?>"  href="#" alt="" title="" >м. Проспект Мира</a></li>
                         <li><a href="#" alt="" title="" > Малый Златоустинский пер, д. 2 </a></li>
                         <li><a href="#" alt="" title="" >от 750u/час*  </a></li>
