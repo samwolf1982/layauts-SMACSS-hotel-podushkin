@@ -1,3 +1,7 @@
+body{
+background-color: @main_pageback;
+}
+
 #nav-tabs-wrapper{
 	background-color: @tab_upper_color;
  li.active > a,  li.active > a:hover,  li.active > a:focus,  li > a:hover, li > a:focus
@@ -208,4 +212,64 @@ height: 100%;
 .news_action{
 	background-image: url('../../../images/back1.png');
 
+}
+.news_action_inner{
+background-color: transparent;
+border: none;
+}
+.action_image{
+background-color: @news_action_b_color;
+ &>p{
+ 	padding: 0 5%;
+ }
+
+}
+.white_text{
+	 color: white;
+}
+.hews_action_header{
+color: #444444;
+}
+.hews_action_normal_text{
+
+color: @hews_action_normal_text;
+}
+.main_text{
+	background-color: @main_pageback;
+}
+
+/* footer */  
+.footer_page{
+	background-color: @footer_back_color;
+	color: @footer_text;
+}
+
+.wrap_footer{
+	padding-top:  42px;
+
+	}
+.footer_nav{
+color: @footer_text;
+&>li>a{color: #d6d6d6; background-color: transparent;}
+
+&>li>a:hover{
+background-color: transparent;
+} 
+
+}
+
+.footer_button{
+	&>li {background-color:  #ab4879;
+
+	    a  {	color: white;}
+      
+	          }
+  
+ &>li>a:hover{
+	background-color: #611b3a;
+}
+}
+.fa-facebook .fa{
+	background-color: yellow;
+	color: red;
 }

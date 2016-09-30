@@ -6721,6 +6721,9 @@ button.close {
     display: none !important;
   }
 }
+body {
+  background-color: #f3f3f3;
+}
 #nav-tabs-wrapper {
   background-color: #611b3a;
 }
@@ -6897,5 +6900,58 @@ select:invalid {
 /* news_action */
 .news_action {
   background-image: url('../../../images/back1.png');
+}
+.news_action_inner {
+  background-color: transparent;
+  border: none;
+}
+.action_image {
+  background-color: #611b3a;
+}
+.action_image > p {
+  padding: 0 5%;
+}
+.white_text {
+  color: white;
+}
+.hews_action_header {
+  color: #444444;
+}
+.hews_action_normal_text {
+  color: #d0bbc4;
+}
+.main_text {
+  background-color: #f3f3f3;
+}
+/* footer */
+.footer_page {
+  background-color: #333333;
+  color: #d6d6d6;
+}
+.wrap_footer {
+  padding-top: 42px;
+}
+.footer_nav {
+  color: #d6d6d6;
+}
+.footer_nav > li > a {
+  color: #d6d6d6;
+  background-color: transparent;
+}
+.footer_nav > li > a:hover {
+  background-color: transparent;
+}
+.footer_button > li {
+  background-color: #ab4879;
+}
+.footer_button > li a {
+  color: white;
+}
+.footer_button > li > a:hover {
+  background-color: #611b3a;
+}
+.fa-facebook .fa {
+  background-color: yellow;
+  color: red;
 }
 /*# sourceMappingURL=bootstrap.css.map */
