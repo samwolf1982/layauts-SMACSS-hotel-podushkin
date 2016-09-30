@@ -21,10 +21,12 @@
 <!-- Custom styles for this template -->
 <link href="assets/css/dashboard.css" rel="stylesheet">
 <link href="assets/css/nav.css" rel="stylesheet">
+
 <!-- ... -->
 
 
-<link rel="stylesheet" href="bootstrap/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+<link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
 
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -56,12 +58,12 @@
 
 
               <li class="active"><a href="#htab_first" data-toggle="tab"><img src="images/home.png" alt="image" title="some" class="nav_img img-responsive"  >   </a></li>
-              <?php foreach ($arrayName = array('о гостиннице','бронирование','правила','гаринтии','наши игрушки','гостевая книга','скидки','новости','контакты','подбор номера'  ) as $key => $value): ?>
-               <li><a  href="#htab<?=$key?>" data-toggle="tab"><?=$value?></a></li>
+              <?php foreach ($arrayName = array('о гостиннице','бронирование','правила','гаринтии','наши игрушки','гостевая книга','скидки','новости','контакты'  ) as $key => $value): ?>
+               <li><a class="text-uppercase"  href="#htab<?=$key?>" data-toggle="tab"><?=$value?></a></li>
              <?php endforeach ?>  
 
 
-             <li><a href="#htab_last" data-toggle="tab">LAst</a></li>
+             <li><a class="text-uppercase" href="#htab_last" data-toggle="tab">подбор номера</a></li>
            </ul>
            <div class="tab-content" id="tab-content">
 
@@ -299,24 +301,24 @@
             <div class=" prod col-sm-5 text-center">
              <p>Lorem ipsum dolor.</p>
              <!-- продукты заполнение старт -->
-             <?php foreach (range(0, 3) as $key => $value): ?>
+             <?php foreach ($arrayName = array('cold_li','text-danger','text-success','brown_li' ) as $key => $v): ?>
+
               <div class="wrap_prod">
-
                <div class="col-sm-12">
+<hr>
 
-
-                <div class="media">
+                <div class="media media_up">
                   <div class="media-left">
                    <img src="images/prod.png" alt="" class="prod_img" class="media-object">
                  </div>
                  <div class="media-body">
 
                   <ul class="nav nav-pills nav-stacked address">
-                    <li><a href="#" alt="" title="" >Lorem ipsum.</a></li>
-                    <li><a href="#" alt="" title="" >Quam, quas.</a></li>
-                    <li><a href="#" alt="" title="" >Facilis, aspernatur.</a></li>
-                    <li><a href="#" alt="" title="" >At, consequuntur.</a></li>
-                    <li><a href="#" alt="" title="" >Dolor, quas!</a></li>
+                    <li><a href="#" alt="" title="" >Проспект Мира  </a></li>
+                    <li ><a class="<?=$v;?>"  href="#" alt="" title="" >м. Проспект Мира</a></li>
+                    <li><a href="#" alt="" title="" > Малый Златоустинский пер, д. 2 </a></li>
+                    <li><a href="#" alt="" title="" >от 750u/час*  </a></li>
+        
                   </ul>
 
                 </div>
@@ -475,15 +477,11 @@
            </p> </div> 
              <div class="col-sm-2"><p>
                     <h4 class="">Мы в соцсетях</h4>
-                    <a class="btn btn-block btn-social btn-facebook">
-    <span class="fa fa-facebook"></span> ... Facebook
-</a>
- <a class="btn btn-block btn-social btn-adn">
-    <span class="fa fa-adn"></span> Sing in with App.net
-</a>
-<a style="background-color: white;" class="btn btn-block btn-social btn-google">
-    <span class="fa fa-google"></span> ... Google
-</a>
+
+                    <?php foreach ($arrayName = array('f','vk','ok','in','g','mm' ) as $key => $v): ?>
+                      <a target="_blank" href="#"><img src="images/soc/<?=$v;?>.png" alt="" width="15" height="15"></a>
+                    <?php endforeach ?>
+
 
            </p> </div>
    
@@ -504,8 +502,8 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="bootstrap/bower_components/moment/min/moment.min.js"></script>
-    <script type="text/javascript" src="bootstrap/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 
 
     <script type="text/javascript">
