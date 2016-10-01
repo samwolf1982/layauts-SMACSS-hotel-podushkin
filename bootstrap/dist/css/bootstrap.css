@@ -6994,5 +6994,59 @@ select:invalid {
 }
 .header_prod {
   font-size: 18pt;
+  color: #565656;
+  font-weight: 600;
+}
+.header_prod_sm {
+  font-size: 14pt;
+}
+.header_prod_sm:hover {
+  color: grey;
+}
+.address > li > a.no_padinglr {
+  padding-left: 0;
+  padding-right: 0;
+}
+.store_text {
+  font-size: 13pt;
+}
+.invert {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+img.googl_play_image {
+  border: 1px solid white;
+  border-radius: 6px;
+  box-sizing: border-box;
+  height: 45px;
+  margin-left: -1em;
+}
+img.apple_image {
+  border: 1px solid white;
+  border-radius: 6px;
+  box-sizing: border-box;
+  height: 45px;
+  margin-left: -3em;
+}
+.telefone {
+  font-size: 18px;
+  color: #565656;
+  font-weight: 600;
+}
+.form-group > select {
+  margin-bottom: 5px;
+}
+.form-group > span {
+  margin-bottom: 5px;
+}
+.form-group > div {
+  margin-bottom: 5px;
+}
+.broni_a {
+  color: #b47498;
+  text-decoration: underline;
+}
+.broni_a:hover {
+  color: #611b3a;
 }
 /*# sourceMappingURL=bootstrap.css.map */

@@ -22,6 +22,7 @@
     <link href="assets/css/dashboard.css" rel="stylesheet">
     <link href="assets/css/nav.css" rel="stylesheet">
 
+
     <!-- ... -->
 
 
@@ -133,16 +134,16 @@
 
     <div class="container-fluid quest_top">
       <div class="row">
-        <div class="col-sm-2 ">
+        <div class="col-sm-2 col-md-3">
           
         </div>
-        <div class="col-sm-4" >
+        <div class="col-sm-4 col-md-5" >
           <span class="add-on input_text_up"><i class="material-icons" style="font-size:36px">place</i></span> 
 
           <span class="quest lead strong">Вы в Москве?</span>
           <button class="btn btn_yes" type="submit">Да</button>
           <button class="btn btn-default btn_yes2" type="submit">Уточнить</button></div>
-          <div class="col-sm-6"></div>
+          <div class="col-sm-6 col-md-4"></div>
 
         </div>
     </div>
@@ -162,12 +163,16 @@
                 <div class="col-sm-1 "></div> 
                 <div class="col-sm-10 ">   
               <a href="/" >  <img src="images/logo_big.png" img-responsive class="imagelogo" alt="" title="" /></a>
+              <br><br>
               <div class="single_contact">
                 Единый контaкт<br>
-                <div class="telefone">
+                <div class="telefone ">
                   <a href="tel:+74952212238"> + 7 (495) 221-223-8</a>
                 </div>
               </div>
+              <br>
+              <br>
+              <br>
               <div class="form-group">     
                 <select class="form-control">
                  <option value="" disabled selected hidden>Выберете отель</option>
@@ -179,7 +184,7 @@
                </select>
 
 
-               <span>Ближайший отель:  <a href="#" >Проспект Мира</a></span>
+               <span>Ближайший отель:  <a href="#" class="broni_a">Проспект Мира</a></span>
                <!-- data -->
                <div class='input-group date' id='datetimepicker1'>
                 <input type='text' class="form-control" placeholder="Дата заезда" />
@@ -230,8 +235,45 @@
                 <div class="col-sm-12 no-margin">
                   <button id="max-button" type="submit" class=" btn btn-primary ">Забронировать</button> 
                 </div>
+                <br>
+                  <div class="col-sm-12 no-margin text-left">
+                  <a href="#" class="broni_a">Расширеный поиск </a>
+                </div>
               </div>
             </div>
+
+<br>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row text-center">
+
+  <div class="col-sm-12"><p>
+                        <h4 class="">Мы в соцсетях</h4>
+
+                        <?php foreach ($arrayName = array('f','vk','ok','in','g','mm' ) as $key => $v): ?>
+                          <a class="invert" target="_blank" href="#"><img src="images/soc/<?=$v;?>.png" alt="" width="15" height="15"></a>
+                        <?php endforeach ?>
+
+
+               </p> 
+<br>
+<br>
+<br>
+               </div>
+
+ <h4 class="">Наше приложение</h4>
+   <div class="col-sm-6 ">
+
+  <a href="#">  <img  alt="" class=" apple_image" src="images\store\storeapple.svg"></a>
+    </div>
+    <div class="col-sm-6 ">
+   <a href="#"> <img class="googl_play_image" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"></a>
+    </div>
+    </div>
+</div>
+
+
           </div>  
     </div>
                     <div class="col-sm-1 "></div>
@@ -325,9 +367,9 @@
 
                       <ul class="nav nav-pills nav-stacked address">
                         <li><a href="#" alt="" title="" class="header_prod" >Проспект Мира  </a></li>
-                        <li ><a class="<?=$v;?>"  href="#" alt="" title="" >м. Проспект Мира</a></li>
-                        <li><a href="#" alt="" title="" > Малый Златоустинский пер, д. 2 </a></li>
-                        <li><a href="#" alt="" title="" >от 750u/час*  </a></li>
+                        <li ><a class="<?=$v;?> header_prod_sm no_padinglr"  href="#" alt="" title="" >м. Проспект Мира</a></li>
+                        <li><a href="#" alt="" title="" class=" no_padinglr text-muted header_prod_sm  " > Малый Златоустинский пер, д. 2 </a></li>
+                        <li><a href="#" alt="" title="" class="header_prod" >от 750u/час*  </a></li>
             
                       </ul>
 
@@ -361,7 +403,7 @@
 
 
       <!-- новости и акции  -->
-      <div class="container news_action max_w text-center">
+      <div class="container news_action max_w text-center ">
         <div class="row no-marginlr">
           <div class="col-sm-12 text-center">
             <h2 class="text-uppercase hews_action_header" >Новости и акции</h2>
