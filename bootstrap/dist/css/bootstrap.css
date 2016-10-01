@@ -7085,4 +7085,69 @@ img.apple_image {
   left: 14px;
   top: 5px;
 }
+.pagination.news_pagionation > li > a,
+.pagination.news_pagionation > li > span {
+  border: 0;
+  background-color: transparent;
+  color: #b47498;
+  font-size: 16pt;
+}
+.news_pagionation {
+  border: 2px solid #b47498;
+}
+.pagination.news_pagionation > .active > a,
+.pagination.news_pagionation > .active > span,
+.pagination.news_pagionation > .active > a:hover,
+.pagination.news_pagionation > .active > span:hover,
+.pagination.news_pagionation > .active > a:focus,
+.pagination.news_pagionation > .active > span:focus {
+  background-color: #ab4879;
+  color: white;
+}
+/* hotels_list     */
+.naw_row {
+  background-color: white;
+  margin-top: -10px;
+  font-size: 23px;
+}
+.breadcrumb_nav {
+  color: #ab4879;
+}
+.breadcrumb_nav.active {
+  color: grey;
+}
+.breadcrumb {
+  background-color: white;
+}
+.breadcrumb > li > a {
+  color: #ab4879;
+  background-color: transparent;
+}
+.reset_margin {
+  margin: 0;
+}
+.search_form {
+  background-color: #f3f3f3;
+}
+.reset-form {
+  background-color: #f4f4f4;
+}
+.clear_button {
+  background-color: transparent;
+  border: 1px solid #cacaca;
+}
+.wrap_filter_label {
+  padding-top: 10px;
+}
+.hotels_r {
+  background-color: #ffffff;
+}
+.searc_form {
+  background-image: url('../../../images/filter/back.png');
+  background-size: cover;
+}
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+  padding: 9px;
+}
 /*# sourceMappingURL=bootstrap.css.map */

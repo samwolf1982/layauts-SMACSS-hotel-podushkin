@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap\dist\css\bootstrap.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+<script src="https://use.fontawesome.com/97240404e3.js"></script>
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -22,7 +22,10 @@
     <link href="assets/css/dashboard.css" rel="stylesheet">
     <link href="assets/css/nav.css" rel="stylesheet">
 
-
+    <link href="assets/css/bootstrap-tokenfield.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-tokenfield.css" rel="stylesheet">
+         <link href="assets/css/tokenfield-typeahead.css" rel="stylesheet">
+        
     <!-- ... -->
 
 

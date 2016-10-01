@@ -1,4 +1,4 @@
-            <div class="col-sm-3 col-lg-2 sidebar text-center">
+            <div class="col-sm-3 col-lg-2 sidebar leftsidebar text-center">
                <div class="row no-marginlr">
             <div class="col-sm-12 text-right hide_button">
  <button class="btn btn_yes hide_button btn_arrow" type="submit"></button>

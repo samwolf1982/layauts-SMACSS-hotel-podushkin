@@ -120,11 +120,12 @@
      <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
      <script src="assets/js/vendor/holder.min.js"></script>
      <script src="assets/js/vendor/nav.js"></script>
-
+     <script src="assets/js/bootstrap-tokenfield.js"></script>
 
      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
      <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
      <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
      <script> 
 
       function init_map() {
@@ -164,20 +165,38 @@ $( window ).resize(function() {
      
     </script>
 
+<!-- свернуть развернуть в news.php -->
     <script>
   $('.news_colapse').click(function (e){
   var chevState = $(e.target).siblings("i.indicator").toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
  
+ 
   if( $(this).hasClass('collapsed')){
- $("i.indicator").not(chevState).removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+    $(this).text('').append('Свернуть <i class="indicator glyphicon glyphicon-chevron-up  pull-right"></i>');
+ /*$("i.indicator").not(chevState).removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");*/
   }else{
-     $("i.indicator").not(chevState).removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+      $(this).text('').append('Развернуть <i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>');
+    /* $("i.indicator").not(chevState).removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");*/
   }
  
 });
 </script>
 
 
+<!-- fiter hotel list -->
+
+<script>
+
+  
+
+  function fillfileld() {
+    // body...
+    
+       $('#tokenfield').tokenfield('createToken', 'purple');
+       $('#tokenfield').tokenfield();
+
+  }
+</script>
 
 
     </body></html>
