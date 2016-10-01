@@ -134,16 +134,16 @@
 
     <div class="container-fluid quest_top">
       <div class="row">
-        <div class="col-sm-2 col-md-3">
+        <div class="col-sm-3 col-md-3 col-lg-2">
           
         </div>
-        <div class="col-sm-4 col-md-5" >
+        <div class="col-sm-6 col-md-5  col-lg-4" >
           <span class="add-on input_text_up"><i class="material-icons" style="font-size:36px">place</i></span> 
 
           <span class="quest lead strong">Вы в Москве?</span>
           <button class="btn btn_yes" type="submit">Да</button>
           <button class="btn btn-default btn_yes2" type="submit">Уточнить</button></div>
-          <div class="col-sm-6 col-md-4"></div>
+          <div class="col-sm-3 col-md-4  col-lg-6"></div>
 
         </div>
     </div>
@@ -152,11 +152,11 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-3 col-lg-2 sidebar text-center">
- <div class="row no-marginlr">
+               <div class="row no-marginlr">
             <div class="col-sm-12 text-right hide_button">
  <button class="btn btn_yes hide_button btn_arrow" type="submit"></button>
             </div>
-            </div>
+               </div>
 
 
 <div class="row ">
@@ -349,7 +349,7 @@
             <!-- продукт плюс карта  -->
             <div class="container no-margin max_w">
               <div class="row">
-                <div class=" prod col-sm-5 text-center">
+                <div id="map-prod" class=" prod col-sm-12 col-md-12 col-lg-5 text-center">
                  <br>
                  <p  class="header_prod">Показаны ближайшие к вам гостиницы </p>
                  <!-- продукты заполнение старт -->
@@ -376,15 +376,6 @@
                     </div>
 
                   </div>
-
-
-
-
-
-
-
-
-
                 </div>
               </div>
 
@@ -393,7 +384,7 @@
           </div>
           <!-- продукты заполнение конец -->
           <!-- карта начало -->
-          <div id="map-container"  class="col-sm-7">
+          <div id="map-container"  class="col-sm-12 col-md-12 col-lg-7">
 
           </div>
           <!--     карта конец -->
@@ -404,7 +395,7 @@
 
       <!-- новости и акции  -->
       <div class="container news_action max_w text-center ">
-        <div class="row no-marginlr">
+        <div class="row no-marginlr" id="wrap_prod_map">
           <div class="col-sm-12 text-center">
             <h2 class="text-uppercase hews_action_header" >Новости и акции</h2>
           </div>
@@ -624,6 +615,22 @@
 
       google.maps.event.addDomListener(window, 'load', init_map);
 
+$(document).ready(function(){
+   var h= $('#map-prod').css('height');
+      $('#map-container').css('height',h);
+          google.maps.event.trigger(map, "resize");
+});
+
+$( window ).resize(function() {
+  var h= $('#map-prod').css('height');
+      $('#map-container').css('height',h);
+          google.maps.event.trigger(map, "resize");
+});
+
+     
     </script>
+
+
+
 
     </body></html>
