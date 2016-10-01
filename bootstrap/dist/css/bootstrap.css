@@ -7048,4 +7048,41 @@ img.apple_image {
 .broni_a:hover {
   color: #611b3a;
 }
+/*------------ NEWS PAGE  -*/
+.news_header {
+  background-color: #f3f3f3;
+}
+.news_body {
+  background-image: url('../../../images/newspage/back.png');
+  background-size: cover;
+}
+.news_list {
+  background-color: white;
+  padding: 2em;
+  margin: 2.5em;
+}
+#body_news {
+  padding-right: 0;
+  padding-left: 0;
+}
+.news_data {
+  font-size: 134%;
+  padding: 8px;
+  border-radius: 0;
+}
+.news_p {
+  font-size: 16pt;
+}
+.news_colapse {
+  font-size: 190%;
+  color: #b47498;
+}
+.news_colapse:hover {
+  color: #611b3a;
+  cursor: pointer;
+}
+.news_colapse > i.indicator {
+  left: 14px;
+  top: 5px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
